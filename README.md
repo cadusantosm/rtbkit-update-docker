@@ -2,7 +2,7 @@
 ===
 
 ```shell
-sudo docker build -t onokonem/rtbkit https://github.com/onokonem/rtbkit-update-docker.git
+sudo docker build --no-cache -t onokonem/rtbkit https://github.com/onokonem/rtbkit-update-docker.git
 
 sudo docker run --net=host -t -i \
   -v /storage/docker/rtbkit/log:/var/log \
